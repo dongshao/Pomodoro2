@@ -4,9 +4,9 @@ import { useTimerStore } from '@/stores/timer'
 const timerStore = useTimerStore()
 
 const modes = [
-  { id: 'pomodoro', label: 'Pomodoro' },
-  { id: 'shortBreak', label: 'Short Break' },
-  { id: 'longBreak', label: 'Long Break' }
+  { id: 'pomodoro', label: '专注' },
+  { id: 'shortBreak', label: '短休' },
+  { id: 'longBreak', label: '长休' }
 ]
 </script>
 

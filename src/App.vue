@@ -53,7 +53,7 @@ watch([() => timerStore.formattedTime, () => timerStore.mode, () => getFocusedTa
       <TimerDisplay />
       
       <div v-if="todoStore.focusedTodoId" class="focus-banner">
-        Working on: <strong>{{ getFocusedTaskText() }}</strong>
+        当前专注：<strong>{{ getFocusedTaskText() }}</strong>
       </div>
 
       <ActionButtons />

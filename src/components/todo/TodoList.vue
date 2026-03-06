@@ -8,7 +8,7 @@ const todoStore = useTodoStore()
 
 <template>
   <div class="todo-list-container">
-    <h3>Tasks</h3>
+    <h3>任务清单</h3>
     <AddTodo />
     
     <div class="todos">
@@ -20,7 +20,7 @@ const todoStore = useTodoStore()
     </div>
     
     <div class="empty-state" v-if="todoStore.todos.length === 0">
-      <p>No tasks for now. Add one above to get started!</p>
+      <p>目前没有任务，在上方添加一个开始吧！</p>
     </div>
   </div>
 </template>

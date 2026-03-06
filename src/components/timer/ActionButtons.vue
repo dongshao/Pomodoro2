@@ -10,14 +10,14 @@ const timerStore = useTimerStore()
       :class="{ active: timerStore.isActive }"
       @click="timerStore.isActive ? timerStore.pauseTimer() : timerStore.startTimer()"
     >
-      {{ timerStore.isActive ? 'PAUSE' : 'START' }}
+      {{ timerStore.isActive ? '暂停' : '开始' }}
     </button>
     <button 
       v-if="timerStore.isActive || timerStore.remainingTime !== (timerStore.mode === 'pomodoro' ? 25*60 : (timerStore.mode === 'shortBreak' ? 5*60 : 15*60))" 
       class="reset-btn" 
       @click="timerStore.resetTimer()"
     >
-      RESET
+      重置
     </button>
   </div>
 </template>
