@@ -7,7 +7,7 @@ const timerStore = useTimerStore()
   <div class="timer-display">
     <div class="time">{{ timerStore.formattedTime }}</div>
     <div class="session-info" v-if="timerStore.mode === 'pomodoro'">
-      Session #{{ timerStore.pomodorosCompleted + 1 }}
+      第 {{ timerStore.pomodorosCompleted + 1 }} 个番茄钟
     </div>
   </div>
 </template>

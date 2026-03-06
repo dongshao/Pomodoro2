@@ -15,7 +15,7 @@ const emit = defineEmits(['open-settings'])
       <h1>{{ title }}</h1>
     </div>
     <button class="settings-btn" @click="emit('open-settings')">
-      ⚙️ Settings
+      ⚙️ 设置
     </button>
   </header>
 </template>

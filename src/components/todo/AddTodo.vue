@@ -18,7 +18,7 @@ const handleAdd = () => {
     <input 
       type="text" 
       v-model="newTodoText" 
-      placeholder="What are you working on?" 
+      placeholder="你准备做点什么？" 
       class="todo-input"
     />
     <button type="submit" class="submit-btn" :disabled="!newTodoText.trim()">

@@ -21,31 +21,31 @@ const saveAndClose = () => {
   <div class="settings-overlay" v-if="isOpen" @click.self="saveAndClose">
     <div class="settings-modal" :class="{ 'modal-open': isOpen }">
       <div class="modal-header">
-        <h2>Settings</h2>
+        <h2>设置</h2>
         <button class="close-btn" @click="saveAndClose">✕</button>
       </div>
       
       <div class="modal-body">
         <div class="setting-group">
-          <label>Timer (minutes)</label>
+          <label>计时器 (分钟)</label>
           <div class="inputs-row">
             <div class="input-item">
-              <span>Pomodoro</span>
+              <span>专注</span>
               <input type="number" min="1" max="90" v-model="settingsStore.pomodoroTime" />
             </div>
             <div class="input-item">
-              <span>Short Break</span>
+              <span>短休</span>
               <input type="number" min="1" max="30" v-model="settingsStore.shortBreakTime" />
             </div>
             <div class="input-item">
-              <span>Long Break</span>
+              <span>长休</span>
               <input type="number" min="1" max="60" v-model="settingsStore.longBreakTime" />
             </div>
           </div>
         </div>
         
         <div class="setting-group toggle-group">
-          <label>Sound Alerts</label>
+          <label>提示音与通知</label>
           <label class="switch">
             <input type="checkbox" v-model="settingsStore.soundEnabled" />
             <span class="slider round"></span>
